@@ -7,4 +7,5 @@ spring:
   profiles:
     include:
       - actuator
+      - redis
     active: local
