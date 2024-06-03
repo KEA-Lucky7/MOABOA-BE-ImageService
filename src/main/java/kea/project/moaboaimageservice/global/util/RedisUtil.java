@@ -25,4 +25,9 @@ public class RedisUtil {
         ValueOperations<String, String> valueOperations = redisTemplate.opsForValue();
         return valueOperations.get(key);
     }
+
+    public void set(String tokenName, String newToken) {
+        ValueOperations<String, String> valueOperations = redisTemplate.opsForValue();
+        valueOperations.set(tokenName, newToken);
+    }
 }
