@@ -7,4 +7,6 @@ import org.springframework.web.multipart.MultipartFile;
 public interface ImageService {
 
     UploadImageResponse uploadImage(MultipartFile image);
+
+    void refreshToken();
 }

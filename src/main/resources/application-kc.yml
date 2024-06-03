@@ -1,8 +1,17 @@
 kakao:
   cloud:
+    token:
+      name: ${KC_TOKEN_NAME}
     image:
       bucket:
         name: ${IMAGE_BUCKET_NAME}
         url: ${IMAGE_BUCKET_URL}
       cdn:
         url: ${IMAGE_CDN_URL}
+    access:
+      id: ${KC_ACCESS_ID}
+      secret: ${KC_ACCESS_SECRET}
+      url: ${KC_ACCESS_URL}
+      header:
+        token:
+          name: ${KC_ACCESS_HEADER_TOKEN_NAME}
