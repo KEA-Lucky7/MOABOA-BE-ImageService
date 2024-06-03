@@ -21,4 +21,8 @@ public class RedisUtil {
         return Boolean.TRUE.equals(redisTemplate.hasKey(key));
     }
 
+    public String get(String key) {
+        ValueOperations<String, String> valueOperations = redisTemplate.opsForValue();
+        return valueOperations.get(key);
+    }
 }
