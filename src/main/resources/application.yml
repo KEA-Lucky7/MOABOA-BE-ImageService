@@ -8,4 +8,5 @@ spring:
     include:
       - actuator
       - redis
+      - kc
     active: local

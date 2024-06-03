@@ -1,0 +1,8 @@
+kakao:
+  cloud:
+    image:
+      bucket:
+        name: ${IMAGE_BUCKET_NAME}
+        url: ${IMAGE_BUCKET_URL}
+      cdn:
+        url: ${IMAGE_CDN_URL}
