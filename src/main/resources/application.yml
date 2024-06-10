@@ -9,4 +9,5 @@ spring:
       - actuator
       - redis
       - kc
+      - vault
     active: local
